@@ -8,7 +8,7 @@ Maybe you can mention me or this repo in the acknowledgements too
 -->
 <div align="center">
 
-  <img src="documentation/assets/mlc_header_mwn.png" alt="logo" width="200" height="auto" />
+  <img src="documentation/assets/mlc_header_mwn.png" alt="logo" width="800" height="auto" />
   <h1>JAXB2 Implementation for DDEX MWN Notifications</h1>
     
   
@@ -43,16 +43,12 @@ Maybe you can mention me or this repo in the acknowledgements too
   * [Features](#dart-features)
 - [Getting Started](#toolbox-getting-started)
   * [Prerequisites](#bangbang-prerequisites)
-  * [Installation](#gear-installation)
-  * [Running Tests](#test_tube-running-tests)
-  * [Run Locally](#running-run-locally)
-  * [Deployment](#triangular_flag_on_post-deployment)
-- [Usage](#eyes-usage)
-- [Roadmap](#compass-roadmap)
-- [Contributing](#wave-contributing)
+  * [Generating Java Files](#gear-generating-java-file)
+  * [Installing the Maven artifact](#gear-installing-the-maven-atrifact)
+<!-- - [Contributing](#wave-contributing)
   * [Code of Conduct](#scroll-code-of-conduct)
 - [FAQ](#grey_question-faq)
-- [License](#warning-license)
+- [License](#warning-license) -->
 - [Contact](#handshake-contact)
 - [Acknowledgements](#gem-acknowledgements)
 
@@ -65,7 +61,7 @@ Maybe you can mention me or this repo in the acknowledgements too
 ### :space_invader: Tech Stack
 
 <ul>
-<li><a href=" https://kb.ddex.net/implementing-each-standard/musical-work-data-and-rights-communication-(mwdr)/musical-work-right-share-notification-standard-(mwn)/">DDEX MWN Messages</a></li>
+<li><a href=" https://kb.ddex.net/implementing-each-standard/musical-work-data-and-rights-communication-(mwdr)/musical-work-right-share-notification-standard-(mwn)/"> DDEX MWN Messages</a></li>
 <li><a href="https://openjdk.org/projects/jdk/21/">Java 21</a></li>
 <li><a href="https://docs.oracle.com/javase/8/docs/technotes/tools/unix/xjc.html">xjc</a></li>
 <li><a href="https://maven.apache.org/">Maven</a></li>
