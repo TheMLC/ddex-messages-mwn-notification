@@ -43,8 +43,8 @@ Maybe you can mention me or this repo in the acknowledgements too
   * [Features](#dart-features)
 - [Getting Started](#toolbox-getting-started)
   * [Prerequisites](#bangbang-prerequisites)
-  * [Generating Java Files](#gear-generating-java-file)
-  * [Installing the Maven artifact](#gear-installing-the-maven-atrifact)
+  * [Generating Java Files](#gear-generating-the-java-files)
+  * [Installing the Maven artifact](#gear-installing-the-maven-artifact)
 <!-- - [Contributing](#wave-contributing)
   * [Code of Conduct](#scroll-code-of-conduct)
 - [FAQ](#grey_question-faq)
@@ -103,7 +103,7 @@ On Mac OS with Homebrew
 ```
 <br /><br />
 
-<!-- Generating the JAva Files -->
+<!-- Generating the Java Files -->
 ### :gear: Generating the Java Files
 
 Use the Makefile provided to run the generation of Java files
@@ -123,7 +123,7 @@ This will generate java files in ``ddex-mwn-13Draft/target/generated-sources/xjc
    
 <br /><br />
 
-<!-- Installing Package -->
+<!-- Installing the Maven artifact -->
 ### :gear: Installing the Maven artifact
 
 Maven will generate an artifact (JAR file) for you. It can be installed in your local repository to be used in other projects.
