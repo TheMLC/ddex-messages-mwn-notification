@@ -157,7 +157,7 @@
                         <autoNameResolution> true</autoNameResolution>
                     </defaultOptions>
                     <bindingDirectory>src/main/xjb</bindingDirectory>
-                    <schemaDirectory>src/main/resources/xsd/mwn1.3draft</schemaDirectory>
+                    <schemaDirectory>src/main/resources/xsd/mwn1.3</schemaDirectory>
                     <schemaIncludes>
                         <include> works-share-notification-choreography.xsd</include>
                     </schemaIncludes>
