@@ -31,3 +31,19 @@ install-mwn-13-draft:
 		--batch-mode \
 		--fail-fast \
 		clean install
+
+generate-mwn-13: 
+	cd ddex-mwn-13 && \
+	mvn \
+	 	--no-transfer-progress \
+		--batch-mode \
+		--fail-fast \
+		clean package
+
+install-mwn-13: 
+	cd ddex-mwn-13 && \
+	mvn \
+	 	--no-transfer-progress \
+		--batch-mode \
+		--fail-fast \
+		clean install

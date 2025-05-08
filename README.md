@@ -76,6 +76,7 @@ Current supported versions include
 <ul>
 <li>MWN 1.1</li>
 <li>MWN 1.3 Draft version</li>
+<li>MWN 1.3</li>
 </ul>
 
 <!-- Getting Started -->
@@ -119,7 +120,14 @@ For MWN 1.3 Draft
 ```bash
   make generate-mwn-13-draft
 ```
-This will generate java files in ``ddex-mwn-13Draft/target/generated-sources/xjc`` directory
+This will generate java files in ``ddex-mwn-13Draft/target/generated-sources/xjc`` directory   
+   
+
+For MWN 1.3
+```bash
+  make generate-mwn-13
+```
+This will generate java files in ``ddex-mwn-13/target/generated-sources/xjc`` directory
    
 <br /><br />
 
@@ -152,6 +160,23 @@ For MWN 1.3 Draft
   make install-mwn-13-draft
 ```
 This will install a new artifact ``net.ddex.messages:mwn-notification:1.3Draft``
+```xml
+            <dependency>
+                <groupId>net.ddex.messages</groupId>
+                <artifactId>mwn-notification</artifactId>
+                <version>1.3Draft</version>
+            </dependency>
+```
+
+
+<br />
+
+
+For MWN 1.3
+```bash
+  make install-mwn-13
+```
+This will install a new artifact ``net.ddex.messages:mwn-notification:1.3``
 ```xml
             <dependency>
                 <groupId>net.ddex.messages</groupId>
