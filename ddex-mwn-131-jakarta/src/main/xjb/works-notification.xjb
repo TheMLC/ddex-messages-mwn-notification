@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jaxb:bindings version="3.0" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <jaxb:bindings>
+        <jaxb:globalBindings typesafeEnumMaxMembers="100000" />
+    </jaxb:bindings>
+
+    <jaxb:bindings schemaLocation="../resources/xsd/mwn1.3/works-share-notification-choreography.xsd ">
+        <jaxb:bindings node="//xs:complexType[@name='Entry']">
+            <jaxb:class name="EntryComplexType" />
+        </jaxb:bindings>
+
+        <jaxb:bindings
+            node="//xs:element[@name='Entry']/xs:complexType/xs:choice/xs:element[@name='title']">
+            <jaxb:class name="titleText" />
+        </jaxb:bindings>
+
+        <jaxb:bindings
+            node="//xs:complexType[@name='Entry']/xs:choice/xs:element[@name='title']">
+            <jaxb:class name="titleText" />
+        </jaxb:bindings>
+        <!-- 
+        <jaxb:bindings
+            node="//xs:complexType[@name='RightShare']/xs:sequence/xs:element[@name='RightShareReference']">
+            <jaxb:class name="RightShareReference" />
+        </jaxb:bindings>
+        <jaxb:bindings
+            node="//xs:complexType[@name='RightShare']/xs:sequence/xs:element[@name='RightShareType']">
+            <jaxb:class name="RightShareType" />
+        </jaxb:bindings>
+        <jaxb:bindings
+            node="//xs:complexType[@name='RightShare']/xs:sequence/xs:element[@name='WorkPart']">
+            <jaxb:class name="WorkPart" />
+        </jaxb:bindings>
+        <jaxb:bindings
+            node="//xs:complexType[@name='RightShare']/xs:sequence/xs:element[@name='RightShareId']">
+            <jaxb:class name="RightShareId" />
+        </jaxb:bindings>
+
+        <jaxb:bindings
+            node="//xs:complexType[@name='RightShare']/xs:sequence/xs:element[@name='AgreementId']">
+            <jaxb:class name="AgreementId" />
+        </jaxb:bindings>
+
+        <jaxb:bindings
+            node="//xs:complexType[@name='RightShare']/xs:sequence/xs:element[@name='RightShareWorkReference']">
+            <jaxb:class name="MusicalWork" />
+        </jaxb:bindings>
+ -->
+
+    </jaxb:bindings>
+
+</jaxb:bindings>

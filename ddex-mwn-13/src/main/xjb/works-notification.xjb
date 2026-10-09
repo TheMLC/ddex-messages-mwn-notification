@@ -19,7 +19,34 @@
             node="//xs:complexType[@name='Entry']/xs:choice/xs:element[@name='title']">
             <jaxb:class name="titleText" />
         </jaxb:bindings>
+        <!-- 
+        <jaxb:bindings
+            node="//xs:complexType[@name='RightShare']/xs:sequence/xs:element[@name='RightShareReference']">
+            <jaxb:class name="RightShareReference" />
+        </jaxb:bindings>
+        <jaxb:bindings
+            node="//xs:complexType[@name='RightShare']/xs:sequence/xs:element[@name='RightShareType']">
+            <jaxb:class name="RightShareType" />
+        </jaxb:bindings>
+        <jaxb:bindings
+            node="//xs:complexType[@name='RightShare']/xs:sequence/xs:element[@name='WorkPart']">
+            <jaxb:class name="WorkPart" />
+        </jaxb:bindings>
+        <jaxb:bindings
+            node="//xs:complexType[@name='RightShare']/xs:sequence/xs:element[@name='RightShareId']">
+            <jaxb:class name="RightShareId" />
+        </jaxb:bindings>
 
+        <jaxb:bindings
+            node="//xs:complexType[@name='RightShare']/xs:sequence/xs:element[@name='AgreementId']">
+            <jaxb:class name="AgreementId" />
+        </jaxb:bindings>
+
+        <jaxb:bindings
+            node="//xs:complexType[@name='RightShare']/xs:sequence/xs:element[@name='RightShareWorkReference']">
+            <jaxb:class name="MusicalWork" />
+        </jaxb:bindings>
+ -->
 
     </jaxb:bindings>
 
