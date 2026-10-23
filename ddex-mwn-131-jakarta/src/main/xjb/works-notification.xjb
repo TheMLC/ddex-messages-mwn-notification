@@ -5,7 +5,7 @@
         <jaxb:globalBindings typesafeEnumMaxMembers="100000" />
     </jaxb:bindings>
 
-    <jaxb:bindings schemaLocation="../resources/xsd/mwn1.3/works-share-notification-choreography.xsd ">
+    <jaxb:bindings schemaLocation="../resources/xsd/mwn1.3.1/works-share-notification-choreography.xsd ">
         <jaxb:bindings node="//xs:complexType[@name='Entry']">
             <jaxb:class name="EntryComplexType" />
         </jaxb:bindings>
