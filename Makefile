@@ -11,6 +11,15 @@ install-13:  install-mwn-13  install-mwn-13-jakarta
 generate-131: generate-mwn-131  generate-mwn-131-jakarta
 install-131:  install-mwn-131  install-mwn-131-jakarta
 
+clean-all:  clean-mwn-11 clean-mwn-13 clean-mwn-131 clean-mwn-11-jakarta clean-mwn-13-jakarta clean-mwn-131-jakarta
+
+clean-mwn-11: 
+	cd ddex-mwn-11 && \
+	mvn  \
+	 	--no-transfer-progress \
+		--batch-mode \
+		--fail-fast \
+		clean
 
 generate-mwn-11: 
 	cd ddex-mwn-11 && \
@@ -26,7 +35,15 @@ install-mwn-11:
 	 	--no-transfer-progress \
 		--batch-mode \
 		--fail-fast \
-		clean install
+		clean package install
+
+clean-mwn-11-jakarta: 
+	cd ddex-mwn-11-jakarta && \
+	mvn  \
+	 	--no-transfer-progress \
+		--batch-mode \
+		--fail-fast \
+		clean 
 
 generate-mwn-11-jakarta: 
 	cd ddex-mwn-11-jakarta && \
@@ -44,6 +61,14 @@ install-mwn-11-jakarta:
 		--fail-fast \
 		clean install
 
+clean-mwn-13-draft: 
+	cd ddex-mwn-13Draft && \
+	mvn \
+	 	--no-transfer-progress \
+		--batch-mode \
+		--fail-fast \
+		clean
+
 generate-mwn-13-draft: 
 	cd ddex-mwn-13Draft && \
 	mvn \
@@ -59,6 +84,14 @@ install-mwn-13-draft:
 		--batch-mode \
 		--fail-fast \
 		clean install
+
+clean-mwn-13: 
+	cd ddex-mwn-13 && \
+	mvn \
+	 	--no-transfer-progress \
+		--batch-mode \
+		--fail-fast \
+		clean
 
 generate-mwn-13: 
 	cd ddex-mwn-13 && \
@@ -76,6 +109,14 @@ install-mwn-13:
 		--fail-fast \
 		clean install
 
+clean-mwn-13-jakarta: 
+	cd ddex-mwn-13-jakarta && \
+	mvn \
+	 	--no-transfer-progress \
+		--batch-mode \
+		--fail-fast \
+		clean 
+
 generate-mwn-13-jakarta: 
 	cd ddex-mwn-13-jakarta && \
 	mvn \
@@ -91,6 +132,14 @@ install-mwn-13-jakarta:
 		--batch-mode \
 		--fail-fast \
 		clean install
+
+clean-mwn-131: 
+	cd ddex-mwn-131 && \
+	mvn \
+	 	--no-transfer-progress \
+		--batch-mode \
+		--fail-fast \
+		clean
 
 generate-mwn-131: 
 	cd ddex-mwn-131 && \
@@ -115,6 +164,14 @@ generate-mwn-131-jakarta:
 		--batch-mode \
 		--fail-fast \
 		clean package
+
+clean-mwn-131-jakarta: 
+	cd ddex-mwn-131-jakarta && \
+	mvn \
+	 	--no-transfer-progress \
+		--batch-mode \
+		--fail-fast \
+		clean
 
 install-mwn-131-jakarta: 
 	cd ddex-mwn-131-jakarta && \

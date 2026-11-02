@@ -31,9 +31,7 @@ build/
 
 ### VS Code ###
 .vscode/
-**run_local.sh
-**deploy*.sh
-**build*.sh
+*.sh
 
 # System stuff
 .settings
@@ -66,4 +64,4 @@ DONE
 
 ignore/
 
-ddex-mwn13/
+ddex-mwn-1311-jakarta/

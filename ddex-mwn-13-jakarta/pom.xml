@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>net.ddex.messages</groupId>
-    <artifactId>mwn-notification-jakarta</artifactId>
+    <artifactId>mwn-notification-13-jakarta</artifactId>
     <version>1.3</version>
 
     <properties>
@@ -143,25 +143,19 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <xjcArgs>
-                                <xjcArg> -XautoNameResolution</xjcArg>
-                            </xjcArgs>
+                            <args>
+                                <arg>-XautoNameResolution</arg>
+                            </args>
                         </configuration>
                     </execution>
                 </executions>
                 <configuration>
-                    <prefix>
-                        jaxb2
-                    </prefix>
-                    <defaultOptions>
-                        <autoNameResolution> true</autoNameResolution>
-                    </defaultOptions>
                     <bindingDirectory>src/main/xjb</bindingDirectory>
                     <schemaDirectory>src/main/resources/xsd/mwn1.3</schemaDirectory>
                     <schemaIncludes>
-                        <include> works-share-notification-choreography.xsd</include>
+                        <include>works-share-notification-choreography.xsd</include>
                     </schemaIncludes>
-                    <clearOutputDir>true</clearOutputDir>
+                    <removeOldOutput>true</removeOldOutput>
                 </configuration>
                 <dependencies>
                     <dependency>

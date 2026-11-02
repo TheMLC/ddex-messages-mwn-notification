@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>net.ddex.messages</groupId>
-    <artifactId>mwn-notification-jakarta</artifactId>
+    <artifactId>mwn-notification-11-jakarta</artifactId>
     <version>1.1</version>
 
     <properties>
@@ -31,7 +31,7 @@
                     <configuration>
                         <fork>true</fork>
                         <useIncrementalCompilation>yes</useIncrementalCompilation>
-                        <release>11</release>
+                        <release>21</release>
                     </configuration>
                 </plugin>
                 <plugin>
@@ -143,25 +143,19 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <xjcArgs>
-                                <xjcArg> -XautoNameResolution</xjcArg>
-                            </xjcArgs>
+                            <args>
+                                <arg>-XautoNameResolution</arg>
+                            </args>
                         </configuration>
                     </execution>
                 </executions>
                 <configuration>
-                    <prefix>
-                        jaxb2
-                    </prefix>
-                    <defaultOptions>
-                        <autoNameResolution> true</autoNameResolution>
-                    </defaultOptions>
                     <bindingDirectory>src/main/xjb</bindingDirectory>
-                    <schemaDirectory> src/main/resources/xsd/mwn1.1</schemaDirectory>
+                    <schemaDirectory>src/main/resources/xsd/mwn1.1</schemaDirectory>
                     <schemaIncludes>
-                        <include> works-share-notification-choreography.xsd</include>
+                        <include>works-share-notification-choreography.xsd</include>
                     </schemaIncludes>
-                    <clearOutputDir>true</clearOutputDir>
+                    <removeOldOutput>true</removeOldOutput>
                 </configuration>
                 <dependencies>
                     <dependency>

@@ -45,6 +45,8 @@ Maybe you can mention me or this repo in the acknowledgements too
   * [Prerequisites](#bangbang-prerequisites)
   * [Generating Java Files](#gear-generating-the-java-files)
   * [Installing the Maven artifact](#gear-installing-the-maven-artifact)
+- [Usage Examples](#pencil-usage-examples)
+  * [FtpAcknowledgementMessage (MWN 1.3.1 Jakarta)](#ftpacknowledgementmessage-mwn-131-jakarta)
 <!-- - [Contributing](#wave-contributing)
   * [Code of Conduct](#scroll-code-of-conduct)
 - [FAQ](#grey_question-faq)
@@ -77,6 +79,13 @@ Current supported versions include
 <li>MWN 1.1</li>
 <li>MWN 1.3 Draft version</li>
 <li>MWN 1.3</li>
+<li>MWN 1.3.1</li>
+</ul>
+
+Each version is available in two flavours:
+<ul>
+<li><strong>javax</strong> — uses <code>javax.xml.bind</code> (Java EE / pre-Jakarta)</li>
+<li><strong>jakarta</strong> — uses <code>jakarta.xml.bind</code> (Jakarta EE 9+, required for Spring Boot 3+)</li>
 </ul>
 
 <!-- Getting Started -->
@@ -128,7 +137,21 @@ For MWN 1.3
   make generate-mwn-13
 ```
 This will generate java files in ``ddex-mwn-13/target/generated-sources/xjc`` directory
-   
+
+
+For MWN 1.3.1 (javax)
+```bash
+  make generate-mwn-131
+```
+This will generate java files in ``ddex-mwn-131/target/generated-sources/xjc`` directory
+
+
+For MWN 1.3.1 (Jakarta)
+```bash
+  make generate-mwn-131-jakarta
+```
+This will generate java files in ``ddex-mwn-131-jakarta/target/generated-sources/xjc`` directory
+
 <br /><br />
 
 <!-- Installing the Maven artifact -->
@@ -181,12 +204,55 @@ This will install a new artifact ``net.ddex.messages:mwn-notification:1.3``
             <dependency>
                 <groupId>net.ddex.messages</groupId>
                 <artifactId>mwn-notification</artifactId>
-                <version>1.3Draft</version>
+                <version>1.3</version>
             </dependency>
 ```
 
 
+<br />
 
+
+For MWN 1.3.1 (javax)
+```bash
+  make install-mwn-131
+```
+This will install a new artifact ``net.ddex.messages:mwn-notification:1.3.1``
+```xml
+            <dependency>
+                <groupId>net.ddex.messages</groupId>
+                <artifactId>mwn-notification</artifactId>
+                <version>1.3.1</version>
+            </dependency>
+```
+
+
+<br />
+
+
+For MWN 1.3.1 (Jakarta)
+```bash
+  make install-mwn-131-jakarta
+```
+This will install a new artifact ``net.ddex.messages:mwn-notification-131-jakarta:1.3.1``
+```xml
+            <dependency>
+                <groupId>net.ddex.messages</groupId>
+                <artifactId>mwn-notification-131-jakarta</artifactId>
+                <version>1.3.1</version>
+            </dependency>
+```
+
+
+<br /><br />
+
+<!-- Usage Examples -->
+## :pencil: Usage Examples
+
+See [documentation/usage-examples.md](documentation/usage-examples.md) for code samples covering:
+
+- `FtpAcknowledgementMessage` (MWN 1.3.1 Jakarta)
+
+<br /><br />
 
 <!-- 
 Contributions are always welcome!
