@@ -55,13 +55,11 @@ DONE
 **api.properties
 **/reportTest/*
 **/src/main/java/META-INF/*
-**/src/main/java/net/*
 **/src/main/java/org/*
+**/src/main/java/net/*
 
 **.pdf
 **.psd
 
-
 ignore/
-
-ddex-mwn-1311-jakarta/
+ddex-mwn-132-jakarta

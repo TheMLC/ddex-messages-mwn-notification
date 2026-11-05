@@ -31,6 +31,9 @@
             <jaxb:class ref="net.ddex.xml.mc_notif._131.SocietyAffiliation" />
         </jaxb:bindings>
 
+        <jaxb:bindings node="//xs:complexType[@name='MessagingParty']">
+            <jaxb:class ref="net.ddex.xml.mc_notif._131.MessagingParty" />
+        </jaxb:bindings>
     </jaxb:bindings>
 
 </jaxb:bindings>
